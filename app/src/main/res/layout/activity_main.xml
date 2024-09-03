@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--creating image view on below line-->
+    <ImageView
+        android:id="@+id/idIVImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp" />
+
+    <!--creating button on below line to pick image-->
+    <Button
+        android:id="@+id/idBtnPickImage"
+        android:drawableLeft="@android:drawable/ic_menu_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVImage"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="28dp"
+        android:text="Pick Image"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/idBtnTakeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:layout_toRightOf="@id/idBtnPickImage"
+        android:layout_below="@id/idIVImage"
+        android:layout_centerInParent="true"
+        android:text="Take a pic"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>
